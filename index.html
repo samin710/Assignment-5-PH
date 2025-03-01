@@ -25,7 +25,7 @@
     </style>
 
     <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <script>
+    <!-- <script>
       tailwind.config = {
         theme: {
           extend: {
@@ -36,7 +36,7 @@
           },
         },
       };
-    </script>
+    </script> -->
   </head>
   <body class="bg-sky-50">
     <header>
@@ -60,10 +60,10 @@
         </div>
       </nav>
     </header>
-    <main class="max-w-10/12 mx-auto py-2 border border-black">
+    <main class="max-w-10/12 mx-auto py-2">
       <div class="grid grid-cols-4 gap-4">
         <!-- Left box -->
-        <div class="col-span-3 bg-base-100 rounded-lg border border-black">
+        <div class="col-span-3 bg-base-100 rounded-lg">
           <!-- Left top box -->
           <div
             class="grid grid-cols-4 gap-5 px-3 py-5 border-dashed border-b border-[#3752FD2f]"
@@ -80,7 +80,8 @@
               </div>
             </div>
             <div
-              class="col-span-2 rounded-lg bg-gradient-to-r from-[#3752FD] to-[#9BA8F8]"
+              id="blog-page-box"
+              class="col-span-2 rounded-lg bg-gradient-to-r from-[#3752FD] to-[#9BA8F8] cursor-pointer"
             >
               <div class="hero-content justify-start">
                 <div class="">
@@ -316,7 +317,7 @@
         </div>
 
         <!-- Right box -->
-        <div class="col-span-1 bg-white rounded-lg border border-black">
+        <div class="col-span-1 bg-white rounded-lg">
           <div class="border-dashed border-b border-[#3752FD2f] pb-4">
             <div class="flex justify-center gap-4 py-5">
               <img src="assets/activity.png" alt="" />
@@ -335,5 +336,6 @@
         </div>
       </div>
     </main>
+    <script src="js/newpage.js"></script>
   </body>
 </html>
