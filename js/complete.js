@@ -1,3 +1,11 @@
+const date = new Date();
+const param = { month: "short", day: "numeric", year: "numeric" };
+const currDate = date.toLocaleDateString("en-us", param);
+const currDateWithoutComma = currDate.replace(",", "");
+const weekDay = date.toLocaleDateString("en-us", { weekday: "long" });
+document.getElementById("date").innerText = currDateWithoutComma;
+document.getElementById("day-name").innerText = weekDay + " ,";
+
 const completeBtns = document.getElementsByClassName("complete");
 
 for (let comBtn of completeBtns) {
@@ -17,6 +25,9 @@ for (let comBtn of completeBtns) {
     this.disabled = true;
     const assignNum = parseInt(document.getElementById("assigned").innerText);
     // console.log(assignNum);
+    if (assignNum == 1) {
+      alert("Congrats!!! You have completed all the current tasks ");
+    }
 
     document.getElementById("assigned").innerText = assignNum - 1;
     // console.log(assignNum);
@@ -24,25 +35,7 @@ for (let comBtn of completeBtns) {
     const checkedNum = parseInt(document.getElementById("checked").innerText);
 
     document.getElementById("checked").innerText = checkedNum + 1;
-    // console.log(checkedNum);
 
-    // const historyContainer = document.getElementById("history-box");
-
-    // const history = document.createElement("div");
-    // history.classList.add(
-    //   "bg-sky-50",
-    //   "rounded-xl",
-    //   "m-3",
-    //   "px-3",
-    //   "py-2",
-    //   "primary-font",
-    //   "text-[#00303C]"
-    // );
-
-    // history.innerHTML = `
-    // <p>You have completed the task ${title} at ${currTime}</p>`;
-
-    // historyContainer.appendChild(history);
     addBlogs(title, currTime);
   });
 }

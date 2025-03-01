@@ -23,24 +23,10 @@
         font-family: "Poppins", sans-serif;
       }
     </style>
-
-    <!-- <script src="https://cdn.tailwindcss.com"></script> -->
-    <!-- <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              clifford: "#da373d",
-              "primary-color": "#3752FD",
-            },
-          },
-        },
-      };
-    </script> -->
   </head>
   <body class="bg-sky-50">
     <header>
-      <nav class="max-w-10/12 mx-auto py-3">
+      <nav class="max-w-10/12 mx-auto pt-9 pb-5">
         <div class="navbar bg-base-100 rounded-lg">
           <img class="px-2" src="assets/logo.png" alt="" />
           <div class="flex-1">
@@ -50,19 +36,19 @@
           </div>
           <div class="flex gap-x-7 pr-2">
             <div class="flex space-x-1 items-center rounded-3xl px-4 bg-sky-50">
-              <img class="max-h-6" src="assets/checkbox.png" alt="" />
+              <img class="max-h-6 pr-3" src="assets/checkbox.png" alt="" />
               <h1 id="checked" class="text-2xl font-bold text-[#1E1E1E ]">
                 23
               </h1>
             </div>
-            <div class="rounded-full p-2 bg-sky-50">
+            <div id="theme-btn" class="rounded-full p-2 bg-sky-50">
               <img class="w-8" src="assets/theme-btn.png" alt="" />
             </div>
           </div>
         </div>
       </nav>
     </header>
-    <main class="max-w-10/12 mx-auto py-2">
+    <main class="max-w-10/12 mx-auto pt-2 pb-14">
       <div class="grid grid-cols-4 gap-4">
         <!-- Left box -->
         <div class="col-span-3 bg-base-100 rounded-lg">
@@ -102,8 +88,8 @@
                   <img class="w-5" src="assets/calender.png" />
                 </div>
                 <div class="">
-                  <p class="opacity-90 text-sm">Wed,</p>
-                  <h1 class="text-lg font-bold">Jul 28 2025</h1>
+                  <p id="day-name" class="opacity-90 text-sm"></p>
+                  <h1 id="date" class="text-lg font-bold">Jul 28 2025</h1>
                 </div>
               </div>
             </div>
@@ -335,7 +321,7 @@
             </div>
             <div id="clear-history" class="max-w-28 mx-auto">
               <button
-                class="btn font-normal primary-font text-xs border-none bg-[#3752FD] text-white rounded-lg "
+                class="btn font-normal primary-font text-xs border-none bg-[#3752FD] text-white rounded-lg"
               >
                 Clear History
               </button>
@@ -350,5 +336,6 @@
     <script src="js/addBlog.js"></script>
     <script src="js/complete.js"></script>
     <script src="js/clearHistory.js"></script>
+    <script src="js/themeChange.js"></script>
   </body>
 </html>
