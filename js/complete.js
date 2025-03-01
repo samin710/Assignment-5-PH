@@ -1,3 +1,4 @@
+// Dynamic Date
 const date = new Date();
 const param = { month: "short", day: "numeric", year: "numeric" };
 const currDate = date.toLocaleDateString("en-us", param);
@@ -18,7 +19,7 @@ for (let comBtn of completeBtns) {
     // console.log(getTitle(x-1));
     const title = getTitle(x - 1);
 
-    // Time
+    // Dynamic Time
     const time = new Date();
     const currTime = time.toLocaleTimeString();
 
