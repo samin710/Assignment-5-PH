@@ -51,7 +51,9 @@
           <div class="flex gap-x-7 pr-2">
             <div class="flex space-x-1 items-center rounded-3xl px-4 bg-sky-50">
               <img class="max-h-6" src="assets/checkbox.png" alt="" />
-              <h1 class="text-2xl font-bold text-[#1E1E1E ]">23</h1>
+              <h1 id="checked" class="text-2xl font-bold text-[#1E1E1E ]">
+                23
+              </h1>
             </div>
             <div class="rounded-full p-2 bg-sky-50">
               <img class="w-8" src="assets/theme-btn.png" alt="" />
@@ -75,7 +77,7 @@
                 </div>
                 <div>
                   <p class="opacity-90 text-sm">Task Assigned</p>
-                  <h1 class="text-xl font-bold">05 </h1>
+                  <h1 id="assigned" class="text-xl font-bold">6 </h1>
                 </div>
               </div>
             </div>
@@ -116,7 +118,7 @@
                   ShopEase
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Fix Mobile Button Issue
                 </h2>
@@ -136,7 +138,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="1"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -150,7 +153,7 @@
                   CloudSync
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Add Dark Mode
                 </h2>
@@ -171,7 +174,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="2"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -185,7 +189,7 @@
                   SwiftPay
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Optimize Home page 
                 </h2>
@@ -205,7 +209,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="3"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -219,7 +224,7 @@
                   Meta
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Add new emoji 🤲
                 </h2>
@@ -239,7 +244,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="4"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -253,7 +259,7 @@
                   Google LLC
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Integrate OpenAI API
                 </h2>
@@ -273,7 +279,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="5"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -287,7 +294,7 @@
                   Glassdoar
                 </button>
                 <h2
-                  class="mb-4 font-medium text-xl text-[#00303C] primary-font"
+                  class="mb-4 font-medium text-xl text-[#00303C] primary-font box-title"
                 >
                   Improve Job searching
                 </h2>
@@ -307,7 +314,8 @@
                   </p>
                 </div>
                 <button
-                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg"
+                  id="6"
+                  class="btn font-normal primary-font text-sm border-none bg-[#3752FD] text-white rounded-lg complete"
                 >
                   Completed
                 </button>
@@ -317,7 +325,7 @@
         </div>
 
         <!-- Right box -->
-        <div class="col-span-1 bg-white rounded-lg">
+        <div id="history-box" class="col-span-1 bg-white rounded-lg">
           <div class="border-dashed border-b border-[#3752FD2f] pb-4">
             <div class="flex justify-center gap-4 py-5">
               <img src="assets/activity.png" alt="" />
@@ -337,5 +345,7 @@
       </div>
     </main>
     <script src="js/newpage.js"></script>
+    <script src="js/complete.js"></script>
+    <script src="js/title.js"></script>
   </body>
 </html>
