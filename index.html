@@ -325,7 +325,7 @@
         </div>
 
         <!-- Right box -->
-        <div id="history-box" class="col-span-1 bg-white rounded-lg">
+        <div class="col-span-1 bg-white rounded-lg">
           <div class="border-dashed border-b border-[#3752FD2f] pb-4">
             <div class="flex justify-center gap-4 py-5">
               <img src="assets/activity.png" alt="" />
@@ -333,19 +333,22 @@
                 Activity Log
               </p>
             </div>
-            <div class="max-w-28 mx-auto">
+            <div id="clear-history" class="max-w-28 mx-auto">
               <button
-                class="btn font-normal primary-font text-xs border-none bg-[#3752FD] text-white rounded-lg"
+                class="btn font-normal primary-font text-xs border-none bg-[#3752FD] text-white rounded-lg "
               >
                 Clear History
               </button>
             </div>
           </div>
+          <div id="history-box"></div>
         </div>
       </div>
     </main>
     <script src="js/newpage.js"></script>
-    <script src="js/complete.js"></script>
     <script src="js/title.js"></script>
+    <script src="js/addBlog.js"></script>
+    <script src="js/complete.js"></script>
+    <script src="js/clearHistory.js"></script>
   </body>
 </html>

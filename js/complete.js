@@ -2,6 +2,7 @@ const completeBtns = document.getElementsByClassName("complete");
 
 for (let comBtn of completeBtns) {
   comBtn.addEventListener("click", function (event) {
+    alert("Board updated Successfully");
     // console.log(comBtn);
     // Get the titles
     const x = event.target.id;
@@ -25,22 +26,23 @@ for (let comBtn of completeBtns) {
     document.getElementById("checked").innerText = checkedNum + 1;
     // console.log(checkedNum);
 
-    const historyContainer = document.getElementById("history-box");
+    // const historyContainer = document.getElementById("history-box");
 
-    const history = document.createElement("div");
-    history.classList.add(
-      "bg-sky-50",
-      "rounded-xl",
-      "m-3",
-      "px-3",
-      "py-2",
-      "primary-font",
-      "text-[#00303C]"
-    );
+    // const history = document.createElement("div");
+    // history.classList.add(
+    //   "bg-sky-50",
+    //   "rounded-xl",
+    //   "m-3",
+    //   "px-3",
+    //   "py-2",
+    //   "primary-font",
+    //   "text-[#00303C]"
+    // );
 
-    history.innerHTML = `
-    <p>You have completed the task ${title} at ${currTime}</p>`;
+    // history.innerHTML = `
+    // <p>You have completed the task ${title} at ${currTime}</p>`;
 
-    historyContainer.appendChild(history);
+    // historyContainer.appendChild(history);
+    addBlogs(title, currTime);
   });
 }
