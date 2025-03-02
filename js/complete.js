@@ -13,10 +13,9 @@ for (let comBtn of completeBtns) {
   comBtn.addEventListener("click", function (event) {
     alert("Board updated Successfully");
     // console.log(comBtn);
+
     // Get the titles
     const x = event.target.id;
-    // console.log(x);
-    // console.log(getTitle(x-1));
     const title = getTitle(x - 1);
 
     // Dynamic Time
@@ -24,17 +23,16 @@ for (let comBtn of completeBtns) {
     const currTime = time.toLocaleTimeString();
 
     this.disabled = true;
+
     const assignNum = parseInt(document.getElementById("assigned").innerText);
+    document.getElementById("assigned").innerText = assignNum - 1;
     // console.log(assignNum);
+
     if (assignNum == 1) {
       alert("Congrats!!! You have completed all the current tasks ");
     }
 
-    document.getElementById("assigned").innerText = assignNum - 1;
-    // console.log(assignNum);
-
     const checkedNum = parseInt(document.getElementById("checked").innerText);
-
     document.getElementById("checked").innerText = checkedNum + 1;
 
     addBlogs(title, currTime);
